@@ -1,0 +1,4 @@
+<ns2:getCustomerStatusResponse xmlns:ns2="http://demo.fusesource.com/wsdl/CustomerService/">
+   <status>${headers.status}</status>
+   <statusMessage>${headers.statusMessage}</statusMessage>
+</ns2:getCustomerStatusResponse>

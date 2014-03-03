@@ -1,0 +1,8 @@
+<ns2:lookupCustomerResponse xmlns:ns2="http://demo.fusesource.com/wsdl/CustomerService/" xmlns:ns3="http://www.fusesource.com/demo/customer">
+   <ret>
+      <ns3:firstName>${headers.firstName}</ns3:firstName>
+      <ns3:lastName>${headers.lastName}</ns3:lastName>
+      <ns3:phoneNumber>${headers.phoneNumber}</ns3:phoneNumber>
+      <ns3:id>${headers.id}</ns3:id>
+   </ret>
+</ns2:lookupCustomerResponse>

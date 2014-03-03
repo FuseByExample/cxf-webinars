@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.fusesource.com/demo/customer" 
+	elementFormDefault="qualified" 
+	xmlns="http://www.w3.org/2001/XMLSchema" 
+	xmlns:tns="http://www.fusesource.com/demo/customer">
+
+    	<complexType name="Customer">
+    		<sequence>
+    			<element name="firstName" type="string"></element>
+    			<element name="lastName" type="string"></element>
+    			<element name="phoneNumber" type="string"></element>
+    			<element name="id" type="string"></element>
+    		</sequence>
+    	</complexType>
+        
+        <element name="Customer" type="tns:Customer"/>
+
+</schema>
