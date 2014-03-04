@@ -37,18 +37,24 @@ the response it gets; you can view the log using
 
 Installing the camel-cxf routes
 -------------------------------
-To install the camel-cxf demos into JBoss Fuse, you need to install the relevant OSGi bundle.
+To install the camel-cxf demos into JBoss Fuse, you need to install the relevant OSGi bundle
+and any prerequisite features.
 
 For example, to install the camel-cxf POJO route, do 
 
+    karaf@root> features:install camel-cxf
     karaf@root> install -s mvn:com.fusesource.byexample.cxf-webinars/customer-ws-camel-cxf-pojo
 
 To install the camel-cxf Payload route, do 
 
+    karaf@root> features:install camel-cxf
+    karaf@root> features:install camel-velocity
     karaf@root> install -s mvn:com.fusesource.byexample.cxf-webinars/customer-ws-camel-cxf-payload
 
 Finally, to install the camel-cxf Provider route, do 
 
+    karaf@root> features:install camel-cxf
+    karaf@root> features:install camel-velocity
     karaf@root> install -s mvn:com.fusesource.byexample.cxf-webinars/customer-ws-camel-cxf-provider
 
 
