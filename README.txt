@@ -1,4 +1,12 @@
-These demos have been built and tested using JBoss Fuse 6.1 (beta) build 337
+These demos have been built and tested using Red Hat JBoss Fuse 6.1.0 GA build 379
+
+Prerequisites
+-------------
+You must have Apache Maven installed and you must configure your settings.xml file
+to use the following repository (both as a repository and as a plug-in repository):
+
+https://repo.fusesource.com/nexus/content/groups/public/
+
 
 Building the examples
 ---------------------
@@ -39,6 +47,9 @@ Installing the camel-cxf routes
 -------------------------------
 To install the camel-cxf demos into JBoss Fuse, you need to install the relevant OSGi bundle
 and any prerequisite features.
+
+Note: You must stop the 'customer-ws-osgi-bundle', if you have alread installed and started it,
+otherwise you will get a port conflict when a camel-cxf demo is started.
 
 For example, to install the camel-cxf POJO route, do 
 
