@@ -23,10 +23,6 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 http://cxf.apache.org/bindings/soap http://cxf.apache.org/schemas/configuration/soap.xsd
 http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 
-<!--
-  -->
-  <import resource="classpath:META-INF/cxf/cxf.xml" />
-    
   <!-- When you use the address="/Customer", the CXF endpoint is installed
        into the container's default Jetty container and automatically gets the URL:
        http://localhost:8181/cxf/Customer
