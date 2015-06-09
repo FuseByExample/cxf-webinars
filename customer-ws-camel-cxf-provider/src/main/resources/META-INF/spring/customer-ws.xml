@@ -28,10 +28,7 @@
     http://camel.apache.org/schema/spring
         http://camel.apache.org/schema/spring/camel-spring.xsd
 ">
-    
-    
-    <import resource="classpath:META-INF/cxf/cxf.xml" />
-  
+
     <!-- When you use the address="/Customer", the CXF endpoint is installed
        into the container's default Jetty container and automatically gets the URL:
        http://localhost:8181/cxf/Customer
@@ -93,6 +90,8 @@
 
     <bean id="activemq" class="org.apache.activemq.camel.component.ActiveMQComponent">
         <property name="brokerURL" value="tcp://localhost:61616"/>
+        <property name="userName" value="admin"/>
+        <property name="password" value="admin"/>
     </bean>
 
 </beans>

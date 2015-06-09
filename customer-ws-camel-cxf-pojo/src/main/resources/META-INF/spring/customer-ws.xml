@@ -28,9 +28,6 @@
         http://camel.apache.org/schema/spring/camel-spring.xsd
 ">
 
-    <import resource="classpath:META-INF/cxf/cxf.xml" />
-    <import resource="classpath:META-INF/cxf/osgi/cxf-extension-osgi.xml"/>
-  
     <!-- When you use the address="/Customer", the CXF endpoint is installed
        into the container's default Jetty container and automatically gets the URL:
        http://localhost:8181/cxf/Customer
