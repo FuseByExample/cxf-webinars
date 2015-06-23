@@ -1,4 +1,4 @@
-These demos have been built and tested using Red Hat JBoss Fuse 6.2.0 build 123
+These demos have been built and tested using Red Hat JBoss Fuse 6.2.0 build 133
 
 Prerequisites
 -------------
